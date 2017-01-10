@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = socket
+inst_PROGRAMS = socket
+instdir=${exec_prefix}/ofp/bin
 socket_LDFLAGS = $(AM_LDFLAGS) -static
 
 dist_socket_SOURCES = \

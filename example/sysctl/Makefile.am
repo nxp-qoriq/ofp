@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = sysctl
+inst_PROGRAMS = sysctl
+instdir=${exec_prefix}/ofp/bin
 
 sysctl_LDFLAGS = $(AM_LDFLAGS) -static
 

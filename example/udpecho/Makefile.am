@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = udpecho
+inst_PROGRAMS = udpecho
+instdir=${exec_prefix}/ofp/bin
 
 udpecho_LDFLAGS = $(AM_LDFLAGS) -static
 

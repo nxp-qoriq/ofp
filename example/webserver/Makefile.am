@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = webserver
+inst_PROGRAMS = webserver
+instdir=${exec_prefix}/ofp/bin
 
 webserver_LDFLAGS = $(AM_LDFLAGS) -static
 
