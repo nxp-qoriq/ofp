@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = udp_fwd_socket
+inst_PROGRAMS = udp_fwd_socket
+instdir=${exec_prefix}/ofp/bin
 
 udp_fwd_socket_LDFLAGS = $(AM_LDFLAGS) -static
 

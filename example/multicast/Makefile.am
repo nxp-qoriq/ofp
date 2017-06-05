@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = mcast
+inst_PROGRAMS = mcast
+instdir=${exec_prefix}/ofp/bin
 
 mcast_LDFLAGS = $(AM_LDFLAGS) -static
 

@@ -1,6 +1,7 @@
 include $(top_srcdir)/example/Makefile.inc
 
-noinst_PROGRAMS = ioctl_test
+inst_PROGRAMS = ioctl_test
+instdir=${exec_prefix}/ofp/bin
 
 ioctl_test_LDFLAGS = $(AM_LDFLAGS) -static
 
