@@ -141,7 +141,7 @@ static int configure_interfaces(odp_instance_t instance,
 
 	odp_pktin_queue_param_init(&pktin_param);
 	pktin_param.op_mode = ODP_PKTIO_OP_MT_UNSAFE;
-	pktin_param.hash_enable = 0;
+	pktin_param.hash_enable = 1;
 	pktin_param.num_queues = rx_queues;
 
 	odp_pktout_queue_param_init(&pktout_param);
